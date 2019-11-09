@@ -137,7 +137,6 @@ class ATM(object):
         if money < 0:
             print("输入错误！！取款失败......")
             return -1
-        #取款
         user.card.cardMoney -= money
         goal_User.card.cardMoney += money
         print("转账成功,转账金额为:{}".format(money))

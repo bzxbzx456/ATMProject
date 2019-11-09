@@ -67,19 +67,19 @@ def main():
         elif option == "3":
             atm.getMoney()
         elif option == "4":
-            print("存储")
+            atm.saveMoney()
         elif option == "5":
-            print("转账")
+            atm.transferMoney()
         elif option == "6":
-            print("改密")
+            atm.changePasswd()
         elif option == "7":
             atm.lockUser()
         elif option == "8":
             atm.unlockUser()
         elif option == "9":
-            print("补卡")
+            atm.newCard()
         elif option == "0":
-            print("销户")
+            atm.killUser()
         elif option == "t":
             if not admin.adminOption():
                 #将当前系统中的用户信息保存到文件中
